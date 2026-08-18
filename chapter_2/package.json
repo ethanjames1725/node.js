@@ -1,0 +1,15 @@
+{
+  "name": "chapter_2",
+  "version": "1.0.0",
+  "description": "Introduction to NPM & Express",
+  "license": "ISC",
+  "author": "Ethan",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
