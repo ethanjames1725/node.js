@@ -1,0 +1,19 @@
+{
+  "name": "chapter_11",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Ethan",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "ejs": "^6.0.1",
+    "express": "^5.2.1",
+    "express-fileupload": "^1.5.2",
+    "mongoose": "^9.9.4"
+  }
+}
