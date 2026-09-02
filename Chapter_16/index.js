@@ -19,7 +19,7 @@ const logoutController = require('./controllers/logout') //page 114
 const flash = require('connect-flash'); //Page 122
 
 
-mongoose.connect('mongodb://localhost:27017/my_database')
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/my_database')
 
 //page 107
 app.use(expressSession({ secret: 'keyboard cat', resave: false, saveUninitialized: false }))
@@ -58,6 +58,7 @@ app.get('/post/:id', getPostController)
 // --- 404 catch-all — must be LAST (page 115)---
 app.use((req, res) => res.render('notfound'))
 
-app.listen(4000, () => {
-    console.log('App listening on port 4000')
-})
+const PORT = process.env.PORT || 4000;
+app.listen(PORT, () => {
+    console.log(`App listening on port ${PORT}`);
+});
